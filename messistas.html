@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messium</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="https://kit.fontawesome.com/1a7f54b804.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body class="messistas">
+    <!--Incia Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo" style="width: 50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html" >INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="barcelona.html">RECORDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messistas.html">MESSISTAS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        GALERIA
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="g.barcelona.html">FC BARCELONA</a></li>
+                            <li><a class="dropdown-item" href="g.psg.html">PARIS SAINT GERMAIN</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="g.seleccion.html">SELECCION ARGENTINA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!--Termina Nav-->
+  <main>  
+    <h1 class="top">
+        BIENVENIDO MESSISTA
+    </h1>
+    <p>Bienvenido al museo virtual de Lionel Andres Messi Cuccittini. Somos millones de messistas alrededor del mundo y te damos la bienvenida. ¿vos también sos messista?</p>
+    <h1 class="letra_roja">Contanos:</h1>
+    <div id="encuesta">
+        <form action="show_data.html" target="_blank">
+            <fieldset>
+                <legend>Alabado sea L10NEL</legend>
+                <br>
+                <div id="encuesta-2">
+
+                    <label for="fname">Nombres:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="apodo">Apodo:</label>
+                    <input type="text" id="apodo" name="apodo"><br><br>
+                    <label for="lname">Apellido:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="mail">Mail:</label>
+                    <input type="email" id="mail" name="mail"><br><br>
+                    <label for="birthday">Fecha de Nacimiento:</label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <label for="fquest">1. ¿Porque sos fanático de Messi? 
+                    <br>
+                    <br>
+                    <textarea name="fquest" rows="5" cols="40"></textarea>
+                    <br>
+                    <br>
+                    <label for="squest">2. ¿Cuál es tu recuerdo favorito sobre lio? 
+                    <br>
+                    <br>
+                    <textarea name="squest" rows="5" cols="40"></textarea>
+                    <br>
+                    <br>
+                    <label for="tquest">3. ¿Que le dirías si lo tuvieras en frente? 
+                    <br>
+                    <br>
+                    <textarea name="tquest" rows="5" cols="40"></textarea>
+                    <br>
+                    <br>
+                    <label name="uquest">4. ¿Quien es su hijo favorito?
+                    </label>
+                    <div><input type="radio" name="hijofav" value="mateo">Mateo
+                    </div>
+                    <div><input type="radio" name="hijofav" value="thiago">Thiago
+                    </div>
+                    <div><input type="radio" name="hijofav" value="ciro">Ciro
+                    </div>
+                    <br>
+                    <br>
+                    <label name="vquest">5. ¿Cuáles (ex)compañeros de Messi explotaron junto a él?
+                    </label>
+                    <div><input type="checkbox" name="Neymar" value="1">Neymar
+                    </div>
+                    <div><input type="checkbox" name="Suarez" value="1">Suarez
+                    </div>
+                    <div><input type="checkbox" name="Villa" value="1">Villa
+                    </div>
+                    <div><input type="checkbox" name="Henry" value="1">Henry
+                    </div>
+                    <div><input type="checkbox" name="Mbappe" value="1">Mbappe
+                    </div>
+                    <div><input type="checkbox" name="Iniesta" value="1">Iniesta
+                    </div>
+                    <br>
+                    <label name="wquest">6. ¿Cuál fue el mejor Balon D'or?
+                    </label>
+                
+                    <select name="Balon de oro">
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2015">2015</option>
+                        <option value="2019">2019</option>
+                        <option value="2021">2021</option>
+                    </select>
+                    <br> <br>
+                    <br>
+                    <input type="reset" value="Limpiar Formulario">
+                    <input type="submit" value="Enviar Formulario">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <a href="messistas.html"class="text-decoration-none"><h4 class="text-body">Volver arriba</h4></a>
+    </main>
+    <div class="line"></div>
+    <footer>
+        <div>
+            Seguinos:
+            <table class="redes">
+                <tr>
+                    <td><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a></td>
+                    <td><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></td>
+                    <td><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></td>
+                    <td><a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>    
